@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+
+.header-logo{
+    font-size: 70px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+}
+.fill-color{
+    font-size: 70px ;
+    font-weight: 700    ;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.4px;
+    -webkit-text-stroke-color: black;
+}
+.menu-dots{
+    top: 0;
+    z-index: 994;
+    display: inline-block;
+    background: black;
+    width: 50px;
+    height: 50px;
+}
+.menu-dots::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: calc(100% + 5px);
+    background: white;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    transition: linear 0.1s;
+}
+
+.menu-dots::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: calc(100% + 5px);
+    background: white;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    transition: linear 0.1s;
+}
+.section-nav{
+    background: black;
+}
+.nav-wrapper{
+    top: 24px;
+}
+.text-color{
+    color:#b2b2b2;
+    font-family: "Roboto Mono", monospace;
+}
+.nav-circle{
+    width: 40px;
+    height: 40px;
+    border: 2px dashed grey;
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    right: 0;
+    border-radius: 50%;
+    
+    animation: rotate 5s linear infinite ;
+}
+
+
+.section-nav ul li{
+    position: relative;
+}
+.section-nav ul li:not(:first-child):after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: grey;
+    right: 20px;
+    top: 25px;
+    border-radius: 50%;
+}
+@keyframes rotate {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+}
+.title-heading h3{
+    font-size: 40px;
+    font-weight: 700;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.283);
+}
+.title-heading {
+    position: relative;
+}
+.title-heading::before{
+    content: '// ABOUT ME';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    bottom: -25px;
+}
+.round-circle{
+    display: inline-flex;
+    align-items: center;
+    border: 1px dashed rgba(0, 0, 0, 0.2);
+    -webkit-transition: linear 0.1s;
+    transition: linear 0.1s;
+}
+
+.stroke-fill{
+    font-size: 50px ;
+    font-weight: 500    ;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.4px;
+    -webkit-text-stroke-color: black;
+}
+.contain{
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;   
+}
