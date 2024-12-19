@@ -20,6 +20,7 @@
     -webkit-text-stroke-color: black;
 }
 .menu-dots{
+    position: relative;
     top: 0;
     z-index: 994;
     display: inline-block;
@@ -39,17 +40,7 @@
     transition: linear 0.1s;
 }
 
-.menu-dots::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: calc(100% + 5px);
-    background: white;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    transition: linear 0.1s;
-}
+
 .section-nav{
     background: black;
 }
@@ -343,4 +334,10 @@ input:not(.form-check-input), textarea {
     height: 100%;
     border-right: 1px solid #dcdfe2;
     width: 80%;
+}
+.btnline{
+    background: transparent;
+    border: 1px dashed black;
+    color: black;
+    padding: 10px 22px;
 }
